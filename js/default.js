@@ -9,9 +9,9 @@ for(var i = 1; i < 101 ; i++)
  var li = document.createElement('li');
  if(0 == i % 3)
   li.textContent = Fizz ; 
- else if(0 == i % 5)
+ if(0 == i % 5)
   li.textContent = Buzz ;
- else
+ if(0 != i % 3 && 0 != i % 5)
  li.textContent = i; 
 document.getElementById('list').appendChild(li);
 }
